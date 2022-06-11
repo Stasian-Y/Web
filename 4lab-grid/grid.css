@@ -1,0 +1,50 @@
+body{
+    color: white;
+}
+.calc{
+    width: 248px;
+    height: 394px;
+}
+.null{
+    background-color: #4a4850;
+    border: 1px solid black;
+    border-radius: 15px 15px 0 0;
+    height:80px;
+}
+.btn{
+    border: 1px solid black;
+    line-height: 60px;
+    text-align: center;
+    background-color: #616066;
+    user-select: none;
+    cursor: pointer;
+}
+.main_but{
+    display: grid;
+    grid-template-areas:
+    "ac plu_min persent divide"
+    "seven eith nine tim"
+    "four five six minus"
+    "one two three plus"
+    "zero zero comma equals";
+}
+.dark{
+    background-color: #535158;
+}
+.orange{
+    background-color: #ff950c;
+}
+.zero{
+    grid-area:zero;
+    width: auto;
+    border-radius: 0 0 0 15px;
+}
+.equals{
+    border-radius: 0 0 15px 0;
+}
+.null p {
+    padding: 22px 10px 0 0 ;
+    text-align: right;
+    font-size: 50px;
+    margin: 0;
+}
