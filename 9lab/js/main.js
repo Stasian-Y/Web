@@ -1,5 +1,5 @@
 const URL = 'https://usersdogs.dmytrominochkin.cloud/dogs';
-const baseSrc = 'https://usersdogs.dmytrominochkin.cloud';
+const Src = 'https://usersdogs.dmytrominochkin.cloud';
 const xhr = new XMLHttpRequest();
 let close_modal = document.getElementById('close_modal');
 let body = document.getElementsByTagName('body')[0];
@@ -14,7 +14,7 @@ fetch(URL)
             
             main.insertAdjacentHTML("beforebegin", 
             `<div class="grid open_modal" onclick="display(this)"  value="${a}">
-            <img src="${baseSrc}${element.dogImage}" alt="dog">
+            <img src="${Src}${element.dogImage}" alt="dog">
             <div class="textAling">
             <h2>${element.title}</h2>
             <p>${element.sex}</p>
@@ -41,7 +41,7 @@ function display(elm) {
     
     dogs.forEach(element => {
                 
-        document.getElementById("link").src = baseSrc + dogs[a].dogImage;
+        document.getElementById("link").src = Src + dogs[a].dogImage;
         document.getElementById("name").innerHTML = dogs[a].title;
         document.getElementById("sex").innerHTML = dogs[a].sex;
         document.getElementById("age").innerHTML = dogs[a].age;
