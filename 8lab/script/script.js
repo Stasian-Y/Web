@@ -100,7 +100,7 @@ Department.prototype.giveSalary = function() {
 
 
 
- function main() {
+
   const dev = new Developer("Alan", "Mazon", 900, 3);
   const dev2 = new Developer("Mania", "Dei", 900, 1);
   const dev3 = new Developer("Dead", "Inside", 1000, 6);
@@ -112,7 +112,6 @@ Department.prototype.giveSalary = function() {
   const departmen = new Department();
   departmen.managers.push(manager);
   departmen.giveSalary();
-}
 
 
-main();
+
